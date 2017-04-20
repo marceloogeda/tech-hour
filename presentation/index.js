@@ -6,7 +6,10 @@ import {
   BlockQuote,
   Cite,
   Deck,
+  Fill,
+  Image,
   Heading,
+  Layout,
   ListItem,
   List,
   Quote,
@@ -35,8 +38,8 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "white",
-  secondary: "#1F2022",
+  primary: "#025380",
+  secondary: "white",
   tertiary: "#03A9FC",
   quartenary: "#CECECE"
 }, {
@@ -50,11 +53,25 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            O desenvolvimento de interface <br />como um quebra-cabeça
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={2} textColor="primary">Sobre nós</Heading>
+          <Layout>
+              <Fill>
+                  <Heading caps bgColor="white">
+                      <Image width="230" src="https://avatars0.githubusercontent.com/u/3205036?v=3&s=460" />
+                      <Text textColor="#333" size={6}>Marcelo Ogeda</Text>
+                  </Heading>
+              </Fill>
+              <Fill>
+                  <Heading caps bgColor="white">
+                      <Image width="230" src="https://avatars2.githubusercontent.com/u/2743180?v=3&s=400" />
+                      <Text textColor="#333" size={6}>Sérgio Kopplin</Text>
+                  </Heading>
+              </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
