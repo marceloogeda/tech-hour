@@ -1,4 +1,22 @@
-# Tech Hour
+# Tech Hour 3ª edição
+
+### Install
+
+```sh
+git clone https://github.com/marceloogeda/tech-hour.git
+cd tech-hour
+yarn install
+```
+
+### Getting started
+
+```sh
+yarn start
+```
+
+Open a browser and hit http://localhost:6060, and we are ready to roll
+
+### TODO
 
 - [ ] Introdução;
 - [ ] Apresentação telas com exemplos de interfaces em comum;  
