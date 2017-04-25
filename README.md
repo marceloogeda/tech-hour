@@ -24,7 +24,7 @@ Open a browser and hit http://localhost:6060, and we are ready to roll
 - [ ] Slide conteúdo introdução;
 - [ ] Apresentação telas com exemplos de interfaces em comum;
   - [ ] Páginas mais utilizadas (ex. Facebook, Twitter, Globo);
-  - [ ] Páginas da empresa;
+  - [ ] Páginas da empresa; (issue #6)
 - [ ] Apresentação do código fonte das telas apresentadas;
 - [ ] Exemplificar o problema (reutilização em webapps independentes);
 - [ ] Destacar componentes e suas composições;
