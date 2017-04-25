@@ -18,7 +18,8 @@ Open a browser and hit http://localhost:6060, and we are ready to roll
 
 ### TODO
 
-- [ ] Introdução;
+- [ ] Introdução membros;
+- [ ] Introdução tema;
 - [ ] Apresentação telas com exemplos de interfaces em comum;  
   - [ ] Páginas mais utilizadas (ex. Facebook, Twitter, Globo);
   - [ ] Páginas da empresa;
