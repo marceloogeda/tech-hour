@@ -29,10 +29,7 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  interface: require("../assets/interface.png")
 };
 
 preloader(images);
@@ -73,10 +70,13 @@ export default class Presentation extends React.Component {
               </Fill>
           </Layout>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        <Slide transition={["zoom"]} bgColor="white">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Primeiramente, o que é interface?
           </Heading>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="white">
+            <Image width="230" src={images.interface} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
