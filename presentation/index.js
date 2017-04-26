@@ -88,7 +88,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="white">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            e o que é desenvolvimento?
+            desenvolvimento de software?
           </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">

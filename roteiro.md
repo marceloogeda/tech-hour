@@ -1,1 +1,13 @@
-roteiro
+- Abrimos o evento, agradecemos a presença de todos;
+- Falamos o título da palestra e que vamos dar início;
+- Falamos sobre os apresentadores, cada um se apresenta;
+- Breve introdução sobre interfaces;
+- Slide com conteúdo sobre interfaces;
+- Mostrar uma telinha de exemplo de interface;
+- Primeiro precisamos falar sobbre desenvolvimento. Falar sobre o que é o desenvolvimento de software;
+- Slide com definição sobre desenvolvimento;
+- Slide falando sobre o cara que faz o desenvolvimento, o desenvolvedor;
+- Slide sobre o desenvolvedor;
+- Exemplo de código fonte escrito por desenvolvedor (HTML);
+- Slide de exemplo do resultado daquele código fonte (lembrando que é somente uma das camadas);
+- GIF para dar risada;
