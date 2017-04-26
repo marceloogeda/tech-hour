@@ -75,6 +75,12 @@ export default class Presentation extends React.Component {
             Primeiramente, o que é interface?
           </Heading>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote style={{ fontSize: "3.5rem" }}>Interface é a conexão do dispositivo eletrônico com o usuário através de uma tela de dispositivo.</Quote>
+            <Cite>Wikipedia</Cite>
+          </BlockQuote>
+        </Slide>
         <Slide transition={["zoom"]} bgColor="white">
             <Image width="230" src={images.interface} />
         </Slide>
