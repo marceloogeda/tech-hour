@@ -119,7 +119,22 @@ export default class Presentation extends React.Component {
             <Image width="530" src={images.developer} />
         </Slide>
         <Slide transition={["zoom"]} bgColor="white">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            e onde os desenvolvedores ficam?
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="white">
             <Image width="1030" src={images.devel} />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Layout>
+              <Fill style={{ marginRight: "3rem" }}>
+                  <Image width="100%" src="https://cloud.githubusercontent.com/assets/3205036/25436358/76f9a4aa-2a69-11e7-81b6-64ace3825da7.png" />
+              </Fill>
+              <Fill>
+                  <Image width="100%" src="https://cloud.githubusercontent.com/assets/3205036/25434236/e6ad6b04-2a61-11e7-9a56-dbcb4c765a58.png" />
+              </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
