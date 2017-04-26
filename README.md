@@ -18,10 +18,9 @@ Open a browser and hit http://localhost:6060, and we are ready to roll
 
 ### TODO
 
+- [x] Slide de introdução
 - [x] Contedo introdução membros #1, desenvolvimento #3, desenvolvedor #4 e devel #5;
-- [ ] Slide de introdução
-- [ ] Conteúdo introdução tema interfaces #2;
-- [ ] Slide conteúdo introdução;
+- [x] Slide introdução tema interfaces #2;
 - [ ] Apresentação telas com exemplos de interfaces em comum;
   - [ ] Páginas mais utilizadas (ex. Facebook, Twitter, Globo);
   - [ ] Páginas da empresa; (issue #6)
