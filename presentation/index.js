@@ -10,8 +10,8 @@ import {
   Image,
   Heading,
   Layout,
-  ListItem,
-  List,
+  // ListItem,
+  // List,
   Quote,
   Slide,
   Text
@@ -142,7 +142,7 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
-        <Slide transition={["fade"]} bgColor="tertiary">
+        {/* <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
           <Heading size={1} textColor="secondary">Heading 1</Heading>
           <Heading size={2} textColor="secondary">Heading 2</Heading>
@@ -165,7 +165,7 @@ export default class Presentation extends React.Component {
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
           </BlockQuote>
-        </Slide>
+        </Slide> */}
       </Deck>
     );
   }
