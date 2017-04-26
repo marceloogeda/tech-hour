@@ -36,7 +36,9 @@ const images = {
   developer: require("../assets/developer.gif"),
   devel: require("../assets/devel.jpg"),
   tech: require("../assets/tech1.png"),
-  tech2: require("../assets/tech2.png")
+  tech2: require("../assets/tech2.png"),
+  busca: require("../assets/busca.png"),
+  buscaHighlight: require("../assets/buscaHighlight.png")
 };
 
 preloader(images);
@@ -131,16 +133,22 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="white">
             <Image width="1030" src={images.devel} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Layout>
-              <Fill style={{ marginRight: "3rem" }}>
-                  <Image width="100%" src="https://cloud.githubusercontent.com/assets/3205036/25436358/76f9a4aa-2a69-11e7-81b6-64ace3825da7.png" />
-              </Fill>
-              <Fill>
-                  <Image width="100%" src="https://cloud.githubusercontent.com/assets/3205036/25434236/e6ad6b04-2a61-11e7-9a56-dbcb4c765a58.png" />
-              </Fill>
-          </Layout>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Heading size={4} textColor="secondary">Voltando as interfaces</Heading>
+            <Text size={6} textColor="secondary">E como elas se parecem na prática?</Text>
+          </BlockQuote>
         </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Image width="100%" src={images.busca} />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Image width="100%" src={images.buscaHighlight} />
+        </Slide>
+        
+        
+        
+        
         <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
         {/* <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
