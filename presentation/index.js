@@ -29,6 +29,8 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   interface: require("../assets/interface.png"),
+  ogeda: require("../assets/ogeda.jpg"),
+  kopplin: require("../assets/kopplin.jpg"),
   google: require("../assets/google.png"),
   googleFont: require("../assets/google-fonte.png"),
   developer: require("../assets/developer.gif"),
@@ -61,13 +63,13 @@ export default class Presentation extends React.Component {
           <Layout>
               <Fill>
                   <Heading caps bgColor="white">
-                      <Image width="230" src="https://avatars0.githubusercontent.com/u/3205036?v=3&s=460" />
+                      <Image width="230" src={images.ogeda} />
                       <Text textColor="#333" size={6}>Marcelo Ogeda</Text>
                   </Heading>
               </Fill>
               <Fill>
                   <Heading caps bgColor="white">
-                      <Image width="230" src="https://avatars2.githubusercontent.com/u/2743180?v=3&s=400" />
+                      <Image width="230" src={images.kopplin} />
                       <Text textColor="#333" size={6}>Sérgio Kopplin</Text>
                   </Heading>
               </Fill>
