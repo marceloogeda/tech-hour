@@ -31,7 +31,8 @@ const images = {
   interface: require("../assets/interface.png"),
   google: require("../assets/google.png"),
   googleFont: require("../assets/google-fonte.png"),
-  developer: require("../assets/developer.gif")
+  developer: require("../assets/developer.gif"),
+  devel: require("../assets/devel.jpg")
 };
 
 preloader(images);
@@ -116,6 +117,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="white">
             <Image width="530" src={images.developer} />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="white">
+            <Image width="1030" src={images.devel} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
