@@ -84,6 +84,17 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="white">
             <Image width="230" src={images.interface} />
         </Slide>
+        <Slide transition={["zoom"]} bgColor="white">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            e o que é desenvolvimento?
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <BlockQuote>
+            <Quote style={{ fontSize: "3.5rem" }}>Em uma definição simples e minimalista, são os 'programas' que usamos em nossos celulares e computadores, onde podemos interagir com ferramentas e pessoas.</Quote>
+            <Cite>Wikipedia</Cite>
+          </BlockQuote>
+        </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
           <Heading size={1} textColor="secondary">Heading 1</Heading>
