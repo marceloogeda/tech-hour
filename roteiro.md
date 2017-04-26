@@ -11,3 +11,4 @@
 - Exemplo de código fonte escrito por desenvolvedor (HTML);
 - Slide de exemplo do resultado daquele código fonte (lembrando que é somente uma das camadas);
 - GIF para dar risada;
+- Slide com a foto do devel, falar um pouco sobre a área;
