@@ -34,7 +34,9 @@ const images = {
   google: require("../assets/google.png"),
   googleFont: require("../assets/google-fonte.png"),
   developer: require("../assets/developer.gif"),
-  devel: require("../assets/devel.jpg")
+  devel: require("../assets/devel.jpg"),
+  tech: require("../assets/tech1.png"),
+  tech2: require("../assets/tech2.png")
 };
 
 preloader(images);
@@ -53,6 +55,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+        <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech}) no-repeat center center fixed` }} />
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             O desenvolvimento de interface <br />como um quebra-cabeça
@@ -138,6 +141,7 @@ export default class Presentation extends React.Component {
               </Fill>
           </Layout>
         </Slide>
+        <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
           <Heading size={1} textColor="secondary">Heading 1</Heading>
