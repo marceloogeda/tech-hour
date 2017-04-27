@@ -17,6 +17,8 @@ import {
   Text
 } from "spectacle";
 
+import CodeSlide from "spectacle-code-slide";
+
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 
@@ -57,32 +59,32 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech}) no-repeat center center fixed` }} />
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade"]} bgColor="white" style={{ background: `url(${images.tech}) no-repeat center center fixed` }} />
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             O desenvolvimento de interface <br />como um quebra-cabeça
           </Heading>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={2} textColor="primary">Sobre nós</Heading>
           <Layout>
               <Fill>
                   <Heading caps bgColor="white">
                       <Image width="230" src={images.ogeda} />
-                      <Text textColor="#333" size={6}>Marcelo Ogeda</Text>
+                      <Text textColor="#333" size={2}>Marcelo Ogeda</Text>
                   </Heading>
               </Fill>
               <Fill>
                   <Heading caps bgColor="white">
                       <Image width="230" src={images.kopplin} />
-                      <Text textColor="#333" size={6}>Sérgio Kopplin</Text>
+                      <Text textColor="#333" size={2}>Sérgio Kopplin</Text>
                   </Heading>
               </Fill>
           </Layout>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Primeiramente, o que é interface?
+            o que é interface?
           </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
@@ -91,13 +93,17 @@ export default class Presentation extends React.Component {
             <Cite>Wikipedia</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
             <Image width="430" src={images.interface} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            desenvolvimento de software?
-          </Heading>
+        <Slide transition={["fade"]} bgColor="white">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>desenvolvimento de software?</Text>
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
@@ -105,10 +111,14 @@ export default class Presentation extends React.Component {
             <Cite>Wikipedia</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            e o que é o desenvolvedor?
-          </Heading>
+        <Slide transition={["fade"]} bgColor="white">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>e o que é o desenvolvedor?</Text>
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
@@ -116,40 +126,83 @@ export default class Presentation extends React.Component {
             <Cite>ITForum365</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
             <Image width="930" src={images.googleFont} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
             <Image width="930" src={images.google} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
             <Image width="530" src={images.developer} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            e onde os desenvolvedores ficam?
-          </Heading>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>e onde os desenvolvedores ficam?</Text>
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="white">
+        <Slide transition={["fade"]} bgColor="white">
             <Image width="1030" src={images.devel} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Heading size={4} textColor="secondary">Voltando as interfaces</Heading>
-            <Text size={6} textColor="secondary">E como elas se parecem na prática?</Text>
-          </BlockQuote>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>Voltando as interfaces</Text>
+              </Heading>
+            </Fill>
+          </Layout>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary">
+          <CodeSlide
+            lang="js"
+            code={require("raw-loader!../assets/js/example.js")}
+            ranges={[
+              { loc: [0, 270], title: "Walking through some code" },
+              { loc: [0, 1], title: "The Beginning" },
+              { loc: [1, 2] },
+              { loc: [1, 2], note: "Heres a note!" },
+              { loc: [2, 3] },
+              { loc: [8, 10] }
+            ]}
+          />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>Dividir o código em pequenos componentes para que eles possam ser sempre reaproveitados.</Text>
+              </Heading>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
           <Image width="100%" src={images.busca} />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary">
           <Image width="100%" src={images.buscaHighlight} />
         </Slide>
-        
-        
-        
-        
-        <Slide transition={["zoom"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Layout>
+            <Fill>
+              <Heading caps bgColor="white">
+                <Text textColor="#333" size={2}>O reaproveitamento de código através de componentes é ideal para que se tenha velocidade no desenvolvimento.</Text>
+              </Heading>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Image width="100%" src={images.buscaHighlight} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            é isso! obrigado.
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
         {/* <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
           <Heading size={1} textColor="secondary">Heading 1</Heading>
