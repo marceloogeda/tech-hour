@@ -61,6 +61,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck theme={theme}>
         <Slide transition={["fade"]} bgColor="white" style={{ background: `url(${images.tech}) no-repeat center center fixed` }} />
+        <Slide transition={["fade"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             O desenvolvimento de interface <br />como um quebra-cabeça
@@ -198,7 +199,6 @@ export default class Presentation extends React.Component {
             é isso! obrigado.
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="white" style={{ background: `url(${images.tech2}) no-repeat center center fixed` }} />
       </Deck>
     );
   }
